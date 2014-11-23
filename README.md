@@ -1,10 +1,8 @@
----
-title: "Processing Data From Accelerometer And Gyroscope In Smartphone"
-author: "Ilmira Shaim"
-date: "23 ноября 2014 г."
-output: html_document
----
-Assuming that data acceptable from the <a href="https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip">link</a> is unpacked in current working directory in "UCI HAR Dataset", we can load it in R and process. 
+
+Processing Data From Accelerometer And Gyroscope In Smartphone
+========
+
+Assuming that data acceptable from the [link](https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip) is unpacked in current working directory in "UCI HAR Dataset", we can load it in R and process. 
 
 All the code is in "run_analysis.R" file. Main steps of the analysis are the following.
 
@@ -35,7 +33,5 @@ The meaning of variables in result data set is described in "CodeBook.md" file.
  
 The result data set is written to the current directory in file "result.txt"
 It can be loaded and viewed by following code:
-<pre><code>data <- read.table("result.txt", header = TRUE)
-View(data)
-</code></pre>
+`data<-read.table("result.txt", header = TRUE)`
 
